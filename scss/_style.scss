@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+$MainFont: 'Outfit', sans-serif;
+
+//Primary
+
+$SoftBlue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+
+// Neutral
+
+$VeryDarkBlue: hsl(217, 54%, 11%);
+$VeryDarkBlueCard: hsl(216, 50%, 16%);
+$VeryDarkBlueLine: hsl(215, 32%, 27%);
+
+:root{
+    font-family: $MainFont;
+    font-size: 18px;
+}
+
+body{
+    background-color: $VeryDarkBlue;
+}
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
