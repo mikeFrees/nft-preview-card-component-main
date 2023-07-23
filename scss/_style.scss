@@ -13,14 +13,27 @@ $VeryDarkBlue: hsl(217, 54%, 11%);
 $VeryDarkBlueCard: hsl(216, 50%, 16%);
 $VeryDarkBlueLine: hsl(215, 32%, 27%);
 
-:root{
-    font-family: $MainFont;
-    font-size: 18px;
-}
 
 body{
+    font: 400 18px/1.5 $MainFont;
     background-color: $VeryDarkBlue;
+    color: white;
 }
+
+.container {
+    background-color: $VeryDarkBlueCard;
+    border-radius: 20px;
+    img {
+        border-radius: 20px;
+        width: 80%;
+        height: 50%;
+        margin: 5% auto;
+    }
+    hr {
+        border-top: 1px solid $SoftBlue;
+    }
+}
+
 .attribution { font-size: 11px; text-align: center; }
 
 .attribution a { color: hsl(228, 45%, 44%); }

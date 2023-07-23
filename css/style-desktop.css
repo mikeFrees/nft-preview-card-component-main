@@ -1,11 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
-:root {
-  font-family: "Outfit", sans-serif;
-  font-size: 18px;
+body {
+  font: 400 18px/1.5 "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  color: white;
 }
 
-body {
-  background-color: hsl(217, 54%, 11%);
+.container {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 20px;
+}
+.container img {
+  border-radius: 20px;
+  width: 80%;
+  height: 50%;
+  margin: 5% auto;
+}
+.container hr {
+  border-top: 1px solid hsl(215, 51%, 70%);
 }
 
 .attribution {
