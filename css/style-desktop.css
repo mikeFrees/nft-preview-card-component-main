@@ -6,17 +6,24 @@ body {
 }
 
 .container {
+  margin: 10%;
   background-color: hsl(216, 50%, 16%);
-  border-radius: 20px;
+  border-radius: 10px;
+  width: 90%;
 }
 .container img {
-  border-radius: 20px;
-  width: 80%;
+  border-radius: 10px;
+  width: 95%;
   height: 50%;
   margin: 5% auto;
 }
 .container hr {
   border-top: 1px solid hsl(215, 51%, 70%);
+  width: 80%;
+}
+
+img[src="images/image-avatar.png"] {
+  width: 10%;
 }
 
 .attribution {

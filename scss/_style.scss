@@ -21,17 +21,24 @@ body{
 }
 
 .container {
+    margin: 10%;
     background-color: $VeryDarkBlueCard;
-    border-radius: 20px;
+    border-radius: 10px;
+    width: 90%;
     img {
-        border-radius: 20px;
-        width: 80%;
+        border-radius: 10px;
+        width: 95%;
         height: 50%;
         margin: 5% auto;
     }
     hr {
         border-top: 1px solid $SoftBlue;
+        width: 80%;
     }
+}
+
+img[src="images/image-avatar.png"] {
+    width: 10%;
 }
 
 .attribution { font-size: 11px; text-align: center; }
