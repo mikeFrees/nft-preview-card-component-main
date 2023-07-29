@@ -1,0 +1,51 @@
+@import "../../../node_modules/@fontsource/outfit/index.css";
+
+//Primary
+
+$SoftBlue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+
+// Neutral
+
+$VeryDarkBlue: hsl(217, 54%, 11%);
+$VeryDarkBlueCard: hsl(216, 50%, 16%);
+$VeryDarkBlueLine: hsl(215, 32%, 27%);
+
+
+body{
+    font: 400 18px/1.5 Outfit;
+    height: 100vh;
+    background-color: $VeryDarkBlue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $VeryDarkBlueCard;
+        width: 80vw;
+        height: 80vh;
+        border-radius: 10px;
+
+        header {
+            width: min-content;
+            img {
+                border-radius: 10px;
+                height: 50%;
+            }
+        }
+    }
+}
+
+img[src="images/image-avatar.png"] {
+    width: 10%;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
