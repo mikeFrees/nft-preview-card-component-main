@@ -26,23 +26,52 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         background-color: $VeryDarkBlueCard;
-        width: 80vw;
-        height: 80vh;
+        width: 20vw;
+        height: 60vh;
         border-radius: 10px;
 
         header {
-            width: min-content;
+            width: 100%;
+            height: 65%;
             img {
                 border-radius: 10px;
-                height: 50%;
+                width: 85%;
+                z-index: 1;
             }
+            svg {
+                z-index: 2;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            
+        }
+        header:hover{
+            svg {
+                background-color: hsla(178, 100%, 50%, 0.4);
+            }
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            div {
+                display: flex;
+            }
+        }
+
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: auto;
         }
     }
 }
 
-img[src="images/image-avatar.png"] {
+img[src="assets/images/image-avatar.png"] {
     width: 10%;
 }
 
