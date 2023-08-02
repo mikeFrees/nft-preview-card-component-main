@@ -31,7 +31,11 @@ body{
         width: 20vw;
         height: 60vh;
         border-radius: 10px;
+        margin: 5%;
         padding: 1%;
+        font-weight: 300;
+        color: $SoftBlue;
+        box-shadow: 0px 25px 0px 10px darken($color: $VeryDarkBlue, $amount: 1);
 
         header {
             display: grid;
@@ -62,15 +66,30 @@ body{
         }
 
         main {
+            font-weight: 300;
             display: flex;
             flex-direction: column;
-            hr {
-                width: 100%;
+            h1 {
+                font-family: 600;
+                color: white;
+            }
+            h1:hover {
+                color: $Cyan;
+                cursor: pointer;
+            }
+            #price {
+                color: $Cyan;
             }
             div {
+                font-weight: 400;
                 display: flex;
                 justify-content: space-between;
             }
+        }
+
+        hr {
+            width: 100%;
+            border-color: $VeryDarkBlueLine;
         }
 
         footer {
@@ -78,9 +97,22 @@ body{
             align-items: center;
             justify-content: flex-start;
             width: auto;
+            img {
+                filter: drop-shadow(0px 0px 1px white);
+            }
 
             p{
+                font-weight: 300;
                 margin-left: 5%;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: 400;
+                }
+                a:hover {
+                    color: $Cyan;
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -90,6 +122,6 @@ img[src="assets/images/image-avatar.png"] {
     width: 10%;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; justify-self: flex-end;}
 
 .attribution a { color: hsl(228, 45%, 44%); }

@@ -18,7 +18,11 @@ body article {
   width: 20vw;
   height: 60vh;
   border-radius: 10px;
+  margin: 5%;
   padding: 1%;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+  box-shadow: 0px 25px 0px 10px #0c1627;
 }
 body article header {
   display: grid;
@@ -45,15 +49,29 @@ body article header:hover svg {
   cursor: pointer;
 }
 body article main {
+  font-weight: 300;
   display: flex;
   flex-direction: column;
 }
-body article main hr {
-  width: 100%;
+body article main h1 {
+  font-family: 600;
+  color: white;
+}
+body article main h1:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+body article main #price {
+  color: hsl(178, 100%, 50%);
 }
 body article main div {
+  font-weight: 400;
   display: flex;
   justify-content: space-between;
+}
+body article hr {
+  width: 100%;
+  border-color: hsl(215, 32%, 27%);
 }
 body article footer {
   display: flex;
@@ -61,8 +79,21 @@ body article footer {
   justify-content: flex-start;
   width: auto;
 }
+body article footer img {
+  filter: drop-shadow(0px 0px 1px white);
+}
 body article footer p {
+  font-weight: 300;
   margin-left: 5%;
+}
+body article footer p a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+}
+body article footer p a:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
 
 img[src="assets/images/image-avatar.png"] {
@@ -72,6 +103,7 @@ img[src="assets/images/image-avatar.png"] {
 .attribution {
   font-size: 11px;
   text-align: center;
+  justify-self: flex-end;
 }
 
 .attribution a {
