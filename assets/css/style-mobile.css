@@ -1,4 +1,8 @@
 @import "../../../node_modules/@fontsource/outfit/index.css";
+* {
+  border-collapse: collapse;
+}
+
 body {
   font: 400 18px/1.5 Outfit;
   height: 100vh;
@@ -23,11 +27,11 @@ body article {
   font-weight: 300;
   color: hsl(215, 51%, 70%);
   box-shadow: 0px 25px 0px 10px #0c1627;
+  min-height: fit-content;
 }
 body article header {
   display: grid;
   width: 100%;
-  height: 65%;
 }
 body article header img {
   grid-row: 1/2;
@@ -54,8 +58,9 @@ body article main {
   flex-direction: column;
 }
 body article main h1 {
-  font-family: 600;
+  font-weight: 600;
   color: white;
+  font-size: 1.5rem;
 }
 body article main h1:hover {
   color: hsl(178, 100%, 50%);
@@ -63,6 +68,16 @@ body article main h1:hover {
 }
 body article main #price {
   color: hsl(178, 100%, 50%);
+}
+body article main #price::before {
+  content: url("../images/icon-ethereum.svg");
+  display: inline-block;
+  vertical-align: middle;
+}
+body article main #time::before {
+  content: url("../images/icon-clock.svg");
+  display: inline-block;
+  vertical-align: middle;
 }
 body article main div {
   font-weight: 400;
@@ -80,11 +95,12 @@ body article footer {
   width: auto;
 }
 body article footer img {
-  filter: drop-shadow(0px 0px 1px white);
+  outline: 1px solid white;
+  border-radius: 50%;
 }
 body article footer p {
   font-weight: 300;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 body article footer p a {
   color: white;
