@@ -27,7 +27,8 @@ body article {
   font-weight: 300;
   color: hsl(215, 51%, 70%);
   box-shadow: 0px 25px 0px 10px #0c1627;
-  min-height: fit-content;
+  min-height: 520px;
+  min-width: 260px;
 }
 body article header {
   display: grid;
@@ -47,10 +48,21 @@ body article header svg {
   margin: auto;
   border-radius: 10px;
 }
-body article header:hover svg {
-  background-color: hsla(178, 100%, 50%, 0.4);
-  z-index: 3;
+body article header:hover {
   cursor: pointer;
+}
+body article header:hover::after {
+  content: " ";
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  border-radius: 10px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+body article header:hover svg {
+  z-index: 3;
 }
 body article main {
   font-weight: 300;
@@ -61,10 +73,14 @@ body article main h1 {
   font-weight: 600;
   color: white;
   font-size: 1.5rem;
+  margin-bottom: 0px;
 }
 body article main h1:hover {
   color: hsl(178, 100%, 50%);
   cursor: pointer;
+}
+body article main p {
+  margin-bottom: 0px;
 }
 body article main #price {
   color: hsl(178, 100%, 50%);
@@ -80,11 +96,13 @@ body article main #time::before {
   vertical-align: middle;
 }
 body article main div {
+  margin-bottom: 0px;
   font-weight: 400;
   display: flex;
   justify-content: space-between;
 }
 body article hr {
+  margin-bottom: 0px;
   width: 100%;
   border-color: hsl(215, 32%, 27%);
 }
@@ -93,6 +111,7 @@ body article footer {
   align-items: center;
   justify-content: flex-start;
   width: auto;
+  height: 5%;
 }
 body article footer img {
   outline: 1px solid white;
@@ -105,7 +124,7 @@ body article footer p {
 body article footer p a {
   color: white;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 300;
 }
 body article footer p a:hover {
   color: hsl(178, 100%, 50%);
